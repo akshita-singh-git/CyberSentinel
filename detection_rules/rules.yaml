@@ -1,0 +1,19 @@
+# Human-readable rule catalogue mirrored by backend/app/services/detection.py
+- id: CS-AUTH-001
+  title: Repeated authentication failures
+  severity: high
+  technique: T1110
+  tactic: Credential Access
+  condition: failed_count >= 5
+- id: CS-PROC-002
+  title: Suspicious PowerShell execution
+  severity: high
+  technique: T1059.001
+  tactic: Execution
+  condition: powershell process and encoded/download execution marker
+- id: CS-PRIV-003
+  title: Unusual privileged activity
+  severity: medium
+  technique: T1078
+  tactic: Initial Access
+  condition: privileged == 1 and unusual_hour == 1

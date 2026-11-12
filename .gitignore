@@ -1,0 +1,39 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# Database
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# ML datasets and generated models
+ml/datasets/
+*.joblib
+*.pkl
+*.h5
+*.onnx
+
+# Operating system
+.DS_Store
+Thumbs.db
